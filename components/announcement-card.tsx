@@ -34,7 +34,7 @@ export function AnnouncementCard({ announcement }: AnnouncementCardProps) {
           <Badge variant="secondary" className="text-xs">
             Announcement
           </Badge>
-          <span className="text-xs text-muted-foreground">
+          <span className="text-xs text-muted-foreground" suppressHydrationWarning>
             {formatDistanceToNow(announcement.postedAt, { addSuffix: true })}
           </span>
           {announcement.isPinned && (

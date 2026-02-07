@@ -134,7 +134,7 @@ export function GradingInterface() {
             )}
           </div>
           {selected.submittedAt && (
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground" suppressHydrationWarning>
               Submitted{" "}
               {format(selected.submittedAt, "MMM d, yyyy 'at' h:mm a")}
               {selected.submittedAt > new Date(Date.now() - 2 * 24 * 60 * 60 * 1000) && (

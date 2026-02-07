@@ -96,7 +96,7 @@ export function AssignmentTimeline({
                 {node.label}
               </p>
               {node.date && (
-                <p className="mt-0.5 text-xs text-muted-foreground">
+                <p className="mt-0.5 text-xs text-muted-foreground" suppressHydrationWarning>
                   {format(node.date, "MMM d, yyyy 'at' h:mm a")}
                 </p>
               )}

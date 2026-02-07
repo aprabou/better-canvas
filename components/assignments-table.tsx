@@ -80,7 +80,7 @@ export function AssignmentsTable({ assignments }: AssignmentsTableProps) {
                   {assignment.name}
                 </Link>
               </TableCell>
-              <TableCell className="text-sm text-muted-foreground">
+              <TableCell className="text-sm text-muted-foreground" suppressHydrationWarning>
                 {formatDistanceToNow(assignment.dueDate, { addSuffix: true })}
               </TableCell>
               <TableCell>{getStatusBadge(assignment.status)}</TableCell>
